@@ -1,3 +1,5 @@
+require 'uri'
+
 class FileEvent < FlowdockEvent
   register_event "file"
 
@@ -7,7 +9,7 @@ class FileEvent < FlowdockEvent
   end
 
   def render
-    url = "https://www.#{IrcServer::FLOWDOCK_DOMAIN}/rest#{@message['content']['path']}"
+    url = "https://www.#{IrcServer::FLOWDOCK_DOMAIN}/rest#{URI::encode(@message['content']['path'])}"
     render_privmsg(@user.irc_host, @target.irc_id, url)
   end
 
