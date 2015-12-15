@@ -1,3 +1,10 @@
+## Differences from Upstream
+Two PRs merged:
+
+https://github.com/flowdock/oulu/pull/67
+
+https://github.com/flowdock/oulu/pull/61
+
 [![Stories in Ready](https://badge.waffle.io/flowdock/oulu.png)](http://waffle.io/flowdock/oulu)
 # Oulu: The Flowdock IRC Gateway [![Build Status](https://travis-ci.org/flowdock/oulu.png?branch=master)](https://travis-ci.org/flowdock/oulu)
 
